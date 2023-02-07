@@ -95,7 +95,7 @@
 		<jarFileName>sota-demo-ignis.jar</jarFileName>
 	</appPropaty>
 	<defaultInipos>0</defaultInipos>
-	<defaultRobotUsers>4</defaultRobotUsers>
+	<defaultRobotUsers>5</defaultRobotUsers>
 	<iniPoses>
 		<Pose>
 			<category i:nil="true" />
@@ -3689,6 +3689,54 @@
 			</MotSend>
 			<debugPort>8765</debugPort>
 			<host>192.168.10.7</host>
+			<password>edison00</password>
+			<platform>Edison</platform>
+			<rootPath>/home/root/</rootPath>
+			<sshPort>22</sshPort>
+			<username>root</username>
+			<vsmdPort>6498</vsmdPort>
+		</RobotUser>
+		<RobotUser>
+			<MotRecv>
+				<MotorPort>
+					<uintID xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<d6p1:unsignedInt>1</d6p1:unsignedInt>
+						<d6p1:unsignedInt>2</d6p1:unsignedInt>
+					</uintID>
+				</MotorPort>
+				<MotorPort>
+					<uintID xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<d6p1:unsignedInt>3</d6p1:unsignedInt>
+						<d6p1:unsignedInt>4</d6p1:unsignedInt>
+					</uintID>
+				</MotorPort>
+				<MotorPort>
+					<uintID xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<d6p1:unsignedInt>5</d6p1:unsignedInt>
+						<d6p1:unsignedInt>6</d6p1:unsignedInt>
+					</uintID>
+				</MotorPort>
+				<MotorPort>
+					<uintID xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<d6p1:unsignedInt>7</d6p1:unsignedInt>
+						<d6p1:unsignedInt>8</d6p1:unsignedInt>
+					</uintID>
+				</MotorPort>
+			</MotRecv>
+			<MotSend>
+				<uintID xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+					<d5p1:unsignedInt>1</d5p1:unsignedInt>
+					<d5p1:unsignedInt>2</d5p1:unsignedInt>
+					<d5p1:unsignedInt>3</d5p1:unsignedInt>
+					<d5p1:unsignedInt>4</d5p1:unsignedInt>
+					<d5p1:unsignedInt>5</d5p1:unsignedInt>
+					<d5p1:unsignedInt>6</d5p1:unsignedInt>
+					<d5p1:unsignedInt>7</d5p1:unsignedInt>
+					<d5p1:unsignedInt>8</d5p1:unsignedInt>
+				</uintID>
+			</MotSend>
+			<debugPort>8765</debugPort>
+			<host>169.254.121.151</host>
 			<password>edison00</password>
 			<platform>Edison</platform>
 			<rootPath>/home/root/</rootPath>
