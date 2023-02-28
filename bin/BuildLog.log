@@ -1,5 +1,5 @@
 VstoneMagic Build&Execute Message Log
-BuildStart time:2023/02/28 14:04:22
+BuildStart time:2023/02/28 17:46:12
 ビルドを開始します。
 C:\Program Files (x86)\VstoneMagic\jdk\bin\javac.exe  -d "C:\Users\itb-OP\Documents\VstoneMagic\WorkSpace\justTesting\justTesting\bin"  -g -Xlint:deprecation   -cp ".;C:\Users\itb-OP\VstoneMagicData\jar\commons-codec-1.10.jar;C:\Users\itb-OP\VstoneMagicData\jar\core-2.2.jar;C:\Users\itb-OP\VstoneMagicData\jar\gson-2.6.1.jar;C:\Users\itb-OP\VstoneMagicData\jar\javase-2.2.jar;C:\Users\itb-OP\VstoneMagicData\jar\jna-4.1.0.jar;C:\Users\itb-OP\VstoneMagicData\jar\opencv-310.jar;C:\Users\itb-OP\VstoneMagicData\jar\SotaAppManager.jar;C:\Users\itb-OP\VstoneMagicData\jar\sotalib.jar;C:\Users\itb-OP\VstoneMagicData\jar\SRClientHelper.jar"  -encoding UTF-8 "C:\Users\itb-OP\Documents\VstoneMagic\WorkSpace\justTesting\justTesting\src\main\main.java" "C:\Users\itb-OP\Documents\VstoneMagic\WorkSpace\justTesting\justTesting\src\jp\co\mysota\mymain.java" 
 
@@ -11,11 +11,180 @@ jarファイルを作成します。
 C:\Program Files (x86)\VstoneMagic\jdk\bin\jar.exe cvfm justTesting.jar Manifest.mf main jp\co\mysota
 マニフェストが追加されました
 main/を追加中です(入=0)(出=0)(0%格納されました)
+main/main$GlobalVariable.classを追加中です(入=1299)(出=655)(49%収縮されました)
+main/main.classを追加中です(入=2179)(出=1179)(45%収縮されました)
+jp/co/mysota/を追加中です(入=0)(出=0)(0%格納されました)
+jp/co/mysota/behavior.classを追加中です(入=8410)(出=1897)(77%収縮されました)
+jp/co/mysota/mymain$1.classを追加中です(入=1590)(出=1002)(36%収縮されました)
+jp/co/mysota/mymain$2.classを追加中です(入=5797)(出=2946)(49%収縮されました)
+jp/co/mysota/mymain.classを追加中です(入=9513)(出=4817)(49%収縮されました)
 
 jarファイルを作成しました。
 
 送信ファイルの上書き確認
 
+スタートアップアプリケーションの停止
+echo "STOP_STARTUP" > /home/vstone/vstonemagic/menu.fifoロボットのSFTPへ接続します。
+10.186.42.102@root
+.
+
+
+ファイルの転送
+ロボットにファイルを転送します。
+Connect to 10.186.42.102@root...接続しました。
+ファイルの転送を開始します。
+Send':'justTesting.jar' completed
+
+
 アプリケーション登録用のアーカイブファイルを作成
 .
 ビルドが完了しました。
+
+
+jarファイルの実行
+ロボットのSSHへ接続します。
+10.186.42.102@root
+java -Dfile.encoding=UTF8 -Djava.library.path=/usr/local/share/OpenCV/java/  -Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=8765 -jar justTesting.jar 2>&1 &ファイルの転送が完了しました。[1;32mroot@edison:~$[m java -Dfile.encoding=UTF8 -Djava.library.path=/usr/local/share/OpenCV/java/  -Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=8765 -jar justTesting.jar 2>&1 &
+[1] 10100
+[1;32mroot@edison:~$[m デバッグの準備ができました。
+
+jdbの実行
+デバッガを起動します。
+C:\Program Files (x86)\VstoneMagic\jdk\bin\jdb.exe -connect com.sun.jdi.SocketAttach:hostname=10.186.42.102,port=8765
+Listening for transport dt_socket at address: 8765
+捕捉されないjava.lang.Throwableの設定遅延した捕捉されないjava.lang.Throwableの設定jdbの初期化中...デバッグ実行のスタンバイができました。
+> VMが開始されました: 現在のコール・スタックにフレームがありません[Info][SpeechRecog]SpeechRecog
+[Info][CRobotSock]Connected server
+[Info][CRobotMotion]MasterCtrlPeriod 16667.0
+[Info][MotionAsSotaWish][Say][scene:talk]こんにちは。ようこそスタートアップサイドへ！
+[Info][TextToSpeechSota][TTS_USE_CACHE] /var/sota/tts//1675403545423.wav
+[Info][CPlayWave]Play /var/sota/tts//1675403545423.wav
+[Info][CPlayWave]isEdison
+[Info][CPlayWave]play------- 10125
+[Info][MotionAsSotaWish]play 3427
+[Info][MotionAsSotaWish][play][talk] [3027msec]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Info][SpeechRecog][getRecognition][Score:0.919937]ばいばい。
+[Info][SpeechRecog][getRecognition][BasicResult] ばいばい
+[Info][MotionAsSotaWish][Say][scene:talk]ばいばい！またきてね！
+[Info][TextToSpeechSota][TTS_USE_CACHE] /var/sota/tts//1677573940473.wav
+[Info][CPlayWave]Play /var/sota/tts//1677573940473.wav
+[Info][CPlayWave]isEdison
+[Info][CPlayWave]play------- 10156
+[Info][MotionAsSotaWish]play 2036
+[Info][MotionAsSotaWish][play][talk] [1636msec]
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Info][SpeechRecog][getRecognition][Score:0.90927]建物
+[Info][SpeechRecog][getRecognition][BasicResult] 建物
+[Info][MotionAsSotaWish][Say][scene:talk]建物の案内だね、任せてよ。9階はコワーキングスペースです。7階と8階には、会議室と、プライベートオフィスや、オンラインブースがあるよ。
+[Info][TextToSpeechSota][TTS_USE_CACHE] /var/sota/tts//1677552538500.wav
+[Info][CPlayWave]Play /var/sota/tts//1677552538500.wav
+[Info][CPlayWave]isEdison
+[Info][CPlayWave]play------- 10187
+[Info][MotionAsSotaWish]play 12327
+[Info][MotionAsSotaWish][play][talk] [11927msec]
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Info][CPlayWave]removeShutdownHook
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Info][SpeechRecog][getRecognition][Score:0.985045]イベント。
+[Info][SpeechRecog][getRecognition][BasicResult] イベント
+[Info][MotionAsSotaWish][Say][scene:talk]ホームページに掲載しているよ。ぜひ見てみてね。  
+[Info][TextToSpeechSota][get:ホームページに掲載しているよ。ぜひ見てみてね。  ][speechRate:11][pitch:13]][intonation:11][lang:null]
+[Info][CPlayWave]Play /dev/shm/wavtemptts0.wav
+[Info][CPlayWave]isEdison
+[Info][CPlayWave]play------- 10305
+[Info][MotionAsSotaWish]play 3768
+[Info][MotionAsSotaWish][play][talk] [3368msec]
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Info][TCPIPServer]accept:/10.186.42.99:46982
+[Info][]cmd;scenario;EventInfo;～これからのアバター共生社会を考える～先端ロボット実証実験イベント;3月3日金曜日に開催;オフライン、オンライン
+waitRequest
+[Info][mymain]検索対象cmd
+[Info][mymain]検索対象scenario
+[Info][mymain]EventInfo ! -- イベント情報を発話します
+[Info][MotionAsSotaWish][Say][scene:talk]直近のイベントを紹介します。～これからのアバター共生社会を考える～先端ロボット実証実験イベントが、3月3日金曜日に開催予定です。オフライン、オンラインで開催するよ。ご参加をお待ちしております。
+[Info][TextToSpeechSota][TTS_USE_CACHE] /var/sota/tts//1677573766743.wav
+[Info][CPlayWave]Play /var/sota/tts//1677573766743.wav
+[Info][CPlayWave]isEdison
+[Info][CPlayWave]play------- 10327
+[Info][MotionAsSotaWish]play 16936
+[Info][MotionAsSotaWish][play][talk] [16536msec]
+[Info][CPlayWave]removeShutdownHook
+[Info][CPlayWave]removeShutdownHook
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Info][mymain]検索対象～これからのアバター共生社会を考える～先端ロボット実証実験イベント
+[Info][mymain]検索対象3月3日金曜日に開催
+[Info][mymain]検索対象オフライン、オンライン
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+[Error][TCPIPServer]timeout
+[Info][]
+waitRequest
+
+kill ` jps|grep "^[0-9]\+ jar" |awk '{print $1}'`中断します。
+exit
+[1;32mroot@edison:~$[m 
+[1;32mroot@edison:~$[m kilmain[1] > l ` jps|grListening for transport dt_socket at address: 8765
+ep "^[0-9]\+ jar" |awk '{print $1}'`
+[1;32mroot@edison:~$[m exit
+logout
+
+ロボットとの通信を切断しました。
+failed in sendDebugCommand:quit
+StandardIn がリダイレクトされていません。
