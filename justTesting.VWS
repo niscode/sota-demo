@@ -95,7 +95,7 @@
 		<jarFileName>justTesting.jar</jarFileName>
 	</appPropaty>
 	<defaultInipos>0</defaultInipos>
-	<defaultRobotUsers>8</defaultRobotUsers>
+	<defaultRobotUsers>9</defaultRobotUsers>
 	<iniPoses>
 		<Pose>
 			<category i:nil="true" />
