@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BuildOmitCheck xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <javacPath>C:\Program Files (x86)\VstoneMagic\jdk\bin\javac.exe</javacPath>
-  <argument> -d "C:\Users\itb-OP\Documents\VstoneMagic\WorkSpace\justTesting\justTesting\bin"  -g -Xlint:deprecation   -cp ".;C:\Users\itb-OP\VstoneMagicData\jar\commons-codec-1.10.jar;C:\Users\itb-OP\VstoneMagicData\jar\core-2.2.jar;C:\Users\itb-OP\VstoneMagicData\jar\gson-2.6.1.jar;C:\Users\itb-OP\VstoneMagicData\jar\javase-2.2.jar;C:\Users\itb-OP\VstoneMagicData\jar\jna-4.1.0.jar;C:\Users\itb-OP\VstoneMagicData\jar\opencv-310.jar;C:\Users\itb-OP\VstoneMagicData\jar\SotaAppManager.jar;C:\Users\itb-OP\VstoneMagicData\jar\sotalib.jar;C:\Users\itb-OP\VstoneMagicData\jar\SRClientHelper.jar"  -encoding UTF-8 </argument>
+  <argument> -d "C:\Users\itb-OP\Documents\VstoneMagic\WorkSpace\justTesting\bin"  -g -Xlint:deprecation   -cp ".;C:\Users\itb-OP\VstoneMagicData\jar\commons-codec-1.10.jar;C:\Users\itb-OP\VstoneMagicData\jar\core-2.2.jar;C:\Users\itb-OP\VstoneMagicData\jar\gson-2.6.1.jar;C:\Users\itb-OP\VstoneMagicData\jar\javase-2.2.jar;C:\Users\itb-OP\VstoneMagicData\jar\jna-4.1.0.jar;C:\Users\itb-OP\VstoneMagicData\jar\opencv-310.jar;C:\Users\itb-OP\VstoneMagicData\jar\SotaAppManager.jar;C:\Users\itb-OP\VstoneMagicData\jar\sotalib.jar;C:\Users\itb-OP\VstoneMagicData\jar\SRClientHelper.jar"  -encoding UTF-8 </argument>
   <files>
     <FileData>
       <path>jp\co\mysota\mymain.java</path>
-      <timestamp>2023-02-28T17:47:21.8303566+09:00</timestamp>
-      <size>43195</size>
-      <ignore>true</ignore>
+      <timestamp>2023-03-16T08:35:38.5797755+09:00</timestamp>
+      <size>73506</size>
+      <ignore>false</ignore>
     </FileData>
     <FileData>
       <path>jp\co\mysota\behavior.java</path>
-      <timestamp>2023-01-25T12:11:52+09:00</timestamp>
+      <timestamp>2023-03-15T14:47:24.8734829+09:00</timestamp>
       <size>11883</size>
       <ignore>true</ignore>
     </FileData>
